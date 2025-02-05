@@ -1,0 +1,162 @@
+/* styles.css */
+
+body {
+
+    background: #666;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}     
+
+header {
+    background: #333;
+    color: #833838;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #9bc840;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.home {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    color: #681d1d;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.home .content img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.about {
+    background: #711562ac;
+}
+
+.projects {
+    background: #50c98e8f;
+}
+
+.contact {
+    background: #39897d87;
+}
+
+footer {
+    background: #866c6c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: #c1dd74;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card .content {
+    padding: 20px;
+}
+
+.project-card .content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project-card .content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: #735959;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #f39c12;
+}
